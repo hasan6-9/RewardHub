@@ -1,0 +1,52 @@
+
+  /* Custom toast */
+  .Vue-toastification__toast {
+    @apply font-sans rounded-lg shadow-lg min-h-12;
+    background-color: var(--toast-bg);
+    color: var(--toast-text);
+    border-left: 4px solid var(--toast-border);
+  }
+  
+  /* Default toast background colors */
+  :root {
+    --toast-success-bg: #fdf3f0;  /* green-50 */
+    --toast-success-text: #166534; /* green-800 */
+    --toast-success-border: #22c55e; /* green-500 */
+    
+    --toast-error-bg: #fef2f2;     /* red-50 */
+    --toast-error-text: #991b1b;   /* red-800 */
+    --toast-error-border: #ef4444; /* red-500 */
+    
+    --toast-info-bg: #eff6ff;      /* blue-50 */
+    --toast-info-text: #1e40af;    /* blue-800 */
+    --toast-info-border: #3b82f6;  /* blue-500 */
+    
+    --toast-warning-bg: #fefce8;   /* yellow-50 */
+    --toast-warning-text: #854d0e; /* yellow-800 */
+    --toast-warning-border: #eab308; /* yellow-500 */
+  }
+  
+  /* Type-specific styles */
+  .Vue-toastification__toast--success {
+    --toast-bg: var(--toast-success-bg);
+    --toast-text: var(--toast-success-text);
+    --toast-border: var(--toast-success-border);
+  }
+  
+  .Vue-toastification__toast--error {
+    --toast-bg: var(--toast-error-bg);
+    --toast-text: var(--toast-error-text);
+    --toast-border: var(--toast-error-border);
+  }
+  
+  .Vue-toastification__toast--info {
+    --toast-bg: var(--toast-info-bg);
+    --toast-text: var(--toast-info-text);
+    --toast-border: var(--toast-info-border);
+  }
+  
+  .Vue-toastification__toast--warning {
+    --toast-bg: var(--toast-warning-bg);
+    --toast-text: var(--toast-warning-text);
+    --toast-border: var(--toast-warning-border);
+  }
